@@ -25,7 +25,15 @@ sigma = zeros(1, size(X, 2));
 %
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
+X_norm = X;
+numColumns = size(X, 2);
 
+mu = mean(X)
+sigma = std(X)
+for i = 1:numColumns
+    X_norm(:,i) = (X(:, i) - mu(i)) / sigma(i);
+end;
+X_norm
 
 
 
