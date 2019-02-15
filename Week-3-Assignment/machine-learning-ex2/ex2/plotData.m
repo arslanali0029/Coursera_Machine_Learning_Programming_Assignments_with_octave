@@ -12,6 +12,12 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
+% Find Indices of Positive and Negative Examples 
+ones = find(y==1);
+zeros = find(y==0);
+% Plot Examples 
+plot(X(ones, 1), X(ones, 2), 'k+','LineWidth', 2, 'MarkerSize', 7); 
+plot(X(zeros, 1), X(zeros, 2), 'ko', 'MarkerFaceColor', 'y',  'MarkerSize', 7);
 
 
 
