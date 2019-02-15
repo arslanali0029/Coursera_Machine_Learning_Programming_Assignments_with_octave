@@ -48,7 +48,7 @@ hold off;
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 %% ============ Warmup exercise: sigmoid function ============
-fprintf('\nWarmup Exercise=======');
+fprintf('\nWarmup Exercise=======\n');
 sigmoid(0)
 pause;
 %% ============ Part 2: Compute Cost and Gradient ============
