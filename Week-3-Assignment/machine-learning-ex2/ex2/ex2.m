@@ -47,10 +47,6 @@ hold off;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
-%% ============ Warmup exercise: sigmoid function ============
-fprintf('\nWarmup Exercise=======\n');
-sigmoid(0)
-pause;
 %% ============ Part 2: Compute Cost and Gradient ============
 %  In this part of the exercise, you will implement the cost and gradient
 %  for logistic regression. You neeed to complete the code in 

@@ -19,11 +19,13 @@ grad = zeros(size(theta));
 %
 % Note: grad should have the same dimensions as theta
 %
+hypo = sigmoid(X*theta);
 
-J = -1/m * sum(y*log(sigmoid(theta'*X')) + (1 - y)*log(1 - sigmoid(theta'*X')));
+cost = sum(-y.*log(hypo) - (1 - y).*log(1 - hypo));
+J = cost/m;
 
-grad = 1/m *sum(X.* repmat( ( sigmoid(X*theta) - y),1 , size(X,2)));
-
+g = sum((hypo-y).* X);
+grad = g/m;
 
 
 
