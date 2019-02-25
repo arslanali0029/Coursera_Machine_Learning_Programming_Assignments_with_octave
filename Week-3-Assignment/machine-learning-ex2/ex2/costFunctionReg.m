@@ -23,6 +23,7 @@ hypo = sigmoid(X*theta);	%hypothesis
 J = (1/m)*sum(-y.*log(hypo) - (1 - y).*log(1 - hypo)) + (lambda/2/m)*sum((theta(2:end)).^2);
 
 grad = sum((hypo-y).* X)/m;
+
 grad(2:end) = grad(2:end)+ lambda/m.* theta(2:end)';
 
 % =============================================================
